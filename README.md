@@ -1,3 +1,9 @@
+[Q5] Usually, we don’t write raw SQL queries in the backend app. Can you find out why?
+
+- Raw sql is prone to sql injection attack if not written properly. while orm give parameterized query that avoids sql injection.
+- ORM is very clean and easy to change or modify the database
+- ORM automatically checks for types 
+
 # URL Shortener API
 
 A simple URL shortener built with Node.js, Express, TypeScript, and Prisma (SQLite).
