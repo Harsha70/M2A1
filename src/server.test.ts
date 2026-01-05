@@ -62,4 +62,21 @@ describe('URL Shortener API', () => {
         
         expect(res.status).toBe(204);
     });
+
+    it('should return 400 when an empty URL is sent', async () => {
+    const res = await request(app)
+        .post('/shorten')
+        .send({ longUrl: "" }); 
+    
+    expect(res.status).toBe(400);
+    expect(res.body).toHaveProperty('error', 'URL is required and cannot be empty');
+    });
+
+    it('should return 400 when the URL field is missing entirely', async () => {
+        const res = await request(app)
+            .post('/shorten')
+            .send({}); 
+        
+        expect(res.status).toBe(400);
+    });
 });
