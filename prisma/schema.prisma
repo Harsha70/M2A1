@@ -10,9 +10,28 @@ datasource db {
   provider = "sqlite"
 }
 
+// one user to many urls
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  email     String   @unique
+  apiKey String @unique
+  tier String @default("hobby")
+  createdAt DateTime @default(now())
+  urls      Url[]
+}
 model Url {
   id        Int      @id @default(autoincrement())
-  longUrl   String   @unique
+  // longUrl   String   @unique
+  longUrl   String 
   shortCode String   @unique
+  clicks         Int       @default(0) 
+  lastAccessedAt DateTime?
   createdAt DateTime @default(now())
+  deletedAt DateTime?
+  expiresAt DateTime?
+  password       String?
+  ownerId Int @default(-1)
+  owner User @relation(fields: [ownerId], references: [id])
 }
+
