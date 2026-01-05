@@ -201,8 +201,8 @@ app.get('/urls', async (req, res) => {
     where: { apiKey } 
   });
 
-  console.log(user)
-  
+  // console.log(user)
+
   if (!user) {
     return res.status(401).json({ error: "Unauthorized" });
   }
