@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "logs\\.fa1e5b52306ed8f03f1e47b642df668a7c6b7141-audit.json",
+    "files": [
+        {
+            "date": 1767717933286,
+            "name": "logs\\shortener-2026-01-06.log",
+            "hash": "374cc88a439225f49b77de7ac028c6fd30bb44fa62da7ed88f7f9737e3b02dea"
+        }
+    ],
+    "hashType": "sha256"
+}

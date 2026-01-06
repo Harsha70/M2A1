@@ -15,7 +15,7 @@ const transport = new winston.transports.DailyRotateFile({
     maxFiles: '14d'
 });
 
-const logger = winston.createLogger({
+export const logger = winston.createLogger({
     format: logFormat,
     transports:[transport, new winston.transports.Console()]
 })

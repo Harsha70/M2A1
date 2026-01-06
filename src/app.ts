@@ -1,15 +1,19 @@
 import express, { Request, Response } from 'express';
 import { nanoid } from 'nanoid';
+import prisma from './db';
+
 import logMiddleware from './middleware/logger';
 import { authenticate } from './middleware/authentication';
-import prisma from './db';
 import { tierCheck } from './middleware/tierCheck';
 import { responseTimeNative } from './middleware/resTimelogging';
+import { blacklistMiddleware } from './middleware/blacklistMiddleware';
 
 const app = express();
-app.use(responseTimeNative);
+
 app.use(express.json());
 
+app.use(responseTimeNative);
+app.use(blacklistMiddleware);
 app.use(logMiddleware);
 
 // old shorten
