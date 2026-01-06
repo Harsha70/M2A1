@@ -1,15 +1,13 @@
 import express, { Request, Response } from 'express';
-import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3';
-import { PrismaClient } from '@prisma/client';
 import { nanoid } from 'nanoid';
+import logMiddleware from './middleware/logger';
+import prisma from './db';
 
-const adapter = new PrismaBetterSqlite3({
-  url: "file:./dev.db"
-})
-
-const prisma = new PrismaClient({adapter});
 const app = express();
 app.use(express.json());
+
+app.use(logMiddleware);
+
 // old shorten
 /*
 app.post('/shorten', async (req: Request, res: Response): Promise<any> => {
@@ -79,7 +77,7 @@ app.delete('/shorten/:code', async (req: Request, res: Response) => {
   }
 });
 */
-app.post('/shorten', async (req, res) => {
+app.post('/shorten', async (req: Request, res: Response) => {
   const apiKey = req.headers['x-api-key'] as string;
   const { longUrl, expiresAt, customCode, password } = req.body;
 
@@ -104,7 +102,7 @@ app.post('/shorten', async (req, res) => {
   res.status(201).json({ code: newUrl.shortCode });
 });
 
-app.post('/shorten/bulk', async (req, res) => {
+app.post('/shorten/bulk', async (req: Request, res: Response) => {
   const apiKey = req.headers['x-api-key'] as string;
   console.log(req.body);
   const { urls } = req.body;
@@ -222,5 +220,27 @@ app.get('/urls', async (req, res) => {
   });
 });
 
+app.get('/health', async (req, res)=>{
+  const healthStatus = {
+    uptime: process.uptime(),
+    memoryUsage: process.memoryUsage(),
+    environment: process.env.NODE_ENV,
+    timestamp: new Date().toISOString(),
+    message: "OK",
+    checks: {
+     server: "UP",
+     database: "DOWN" 
+    }
+  };
+  try {
+    await prisma.$queryRaw`SELECT 1`;
+    healthStatus.checks.database = "UP";
+  } catch (error) {
+    healthStatus.message = "ERROR";
+    healthStatus.checks.database = "DOWN";
+    res.status(503).json(healthStatus);
+  }
+  res.status(200).json(healthStatus);
+});
 
 export default app;

@@ -229,4 +229,13 @@ describe('Ownership and Security', () => {
     expect(res.status).toBe(401);
   });
 
+  it('should return 200 and UP status for server and database', async () => {
+    const res = await request(app).get('/health');
+    
+    expect(res.status).toBe(200);
+    expect(res.body.checks.server).toBe('UP');
+    expect(res.body.checks.database).toBe('UP');
+    expect(res.body).toHaveProperty('uptime');
+  });
+
 });
