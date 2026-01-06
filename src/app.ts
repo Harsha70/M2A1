@@ -1,9 +1,13 @@
 import express, { Request, Response } from 'express';
 import { nanoid } from 'nanoid';
 import logMiddleware from './middleware/logger';
+import { authenticate } from './middleware/authentication';
 import prisma from './db';
+import { tierCheck } from './middleware/tierCheck';
+import { responseTimeNative } from './middleware/resTimelogging';
 
 const app = express();
+app.use(responseTimeNative);
 app.use(express.json());
 
 app.use(logMiddleware);
@@ -77,18 +81,15 @@ app.delete('/shorten/:code', async (req: Request, res: Response) => {
   }
 });
 */
-app.post('/shorten', async (req: Request, res: Response) => {
-  const apiKey = req.headers['x-api-key'] as string;
-  const { longUrl, expiresAt, customCode, password } = req.body;
 
-  const user = await prisma.user.findUnique({ where: { apiKey } });
-  if (!user) return res.status(401).json({ error: "Unauthorized" });
+
+app.post('/shorten', authenticate, async (req: Request, res: Response): Promise<any> => {
+  const { longUrl, expiresAt, customCode, password } = req.body;
+  const user = req.user!; 
 
   let shortCode = customCode || nanoid(6);
   const existing = await prisma.url.findUnique({ where: { shortCode } });
   if (existing) return res.status(409).json({ error: "Custom code already in use. Please choose another one." });
-
-
 
   const newUrl = await prisma.url.create({
     data: { 
@@ -102,18 +103,15 @@ app.post('/shorten', async (req: Request, res: Response) => {
   res.status(201).json({ code: newUrl.shortCode });
 });
 
-app.post('/shorten/bulk', async (req: Request, res: Response) => {
-  const apiKey = req.headers['x-api-key'] as string;
-  console.log(req.body);
+app.post('/shorten/bulk', authenticate, tierCheck, async (req: Request, res: Response): Promise<any> => {
   const { urls } = req.body;
-  const user = await prisma.user.findUnique({ where: { apiKey } });
-  if (!user) return res.status(401).json({ error: "Unauthorized" });
+  const user = req.user!;
 
-  if (user.tier !== 'enterprise') {
-    return res.status(403).json({ 
-      error: "Bulk creation is an Enterprise feature. Please upgrade your plan." 
-    });
-  }
+  // if (user.tier !== 'enterprise') {
+  //   return res.status(403).json({ 
+  //     error: "Bulk creation is an Enterprise feature. Please upgrade your plan." 
+  //   });
+  // }
 
   if (!Array.isArray(urls)) {
     return res.status(400).json({ error: "Input must be an array of URLs" });
@@ -148,15 +146,14 @@ app.post('/shorten/bulk', async (req: Request, res: Response) => {
   res.status(207).json(results);
 })
 
-app.delete('/shorten/:code', async (req, res) => {
-  const apiKey = req.headers['x-api-key'] as string;
+app.delete('/shorten/:code', authenticate, async (req: Request, res: Response): Promise<any> => {
   const { code } = req.params;
+  const user = req.user!;
 
-  const user = await prisma.user.findUnique({ where: { apiKey } });
   const urlEntry = await prisma.url.findUnique({ where: { shortCode: code } });
 
   if (!urlEntry || urlEntry.deletedAt) return res.status(404).json({ error: "Link not found" });
-  if (urlEntry.ownerId !== user?.id) return res.status(403).json({ error: "Forbidden: You don't own this link" });
+  if (urlEntry.ownerId !== user.id) return res.status(403).json({ error: "Forbidden: You don't own this link" });
 
   await prisma.url.update({
     where: { shortCode: code },
@@ -166,18 +163,15 @@ app.delete('/shorten/:code', async (req, res) => {
   res.status(204).send();
 });
 
-app.patch('/shorten/:code', async (req, res) => {
-  const apiKey = req.headers['x-api-key'] as string;
+app.patch('/shorten/:code', authenticate, async (req: Request, res: Response): Promise<any> => {
   const { code } = req.params;
   const { longUrl, expiresAt, password } = req.body;
-
-  const user = await prisma.user.findUnique({ where: { apiKey } });
-  if (!user) return res.status(401).json({ error: "Unauthorized" });
+  const user = req.user!;
 
   const urlEntry = await prisma.url.findUnique({ where: { shortCode: code } });
 
   if (!urlEntry || urlEntry.deletedAt) return res.status(404).json({ error: "Link not found" });
-  if (urlEntry.ownerId !== user?.id) return res.status(403).json({ error: "Forbidden: You don't own this link" });
+  if (urlEntry.ownerId !== user.id) return res.status(403).json({ error: "Forbidden: You don't own this link" });
 
 
   const updated = await prisma.url.update({
@@ -192,18 +186,8 @@ app.patch('/shorten/:code', async (req, res) => {
   res.status(200).json(updated);
 });
 
-app.get('/urls', async (req, res) => {
-  const apiKey = req.headers['x-api-key'] as string;
-
-  const user = await prisma.user.findUnique({ 
-    where: { apiKey } 
-  });
-
-  // console.log(user)
-
-  if (!user) {
-    return res.status(401).json({ error: "Unauthorized" });
-  }
+app.get('/urls', authenticate, async (req: Request, res: Response): Promise<any> => {
+  const user = req.user!;
 
   const urls = await prisma.url.findMany({
     where: { 
