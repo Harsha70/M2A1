@@ -1,6 +1,9 @@
 import winston from 'winston';
+import Transport from 'winston-transport';
 import 'winston-daily-rotate-file';
 import { NextFunction, Request, Response } from 'express';
+import * as Sentry from "@sentry/node";
+// import { SentryTransport } from "@sentry/winston";
 
 const logFormat = winston.format.combine(
     winston.format.timestamp(),
@@ -15,24 +18,41 @@ const transport = new winston.transports.DailyRotateFile({
     maxFiles: '14d'
 });
 
+const SentryWinstonTransport = Sentry.createSentryWinstonTransport(Transport);
+
+
 export const logger = winston.createLogger({
     format: logFormat,
-    transports:[transport, new winston.transports.Console()]
+    transports:[transport, new winston.transports.Console()
+    , new SentryWinstonTransport({
+      sentry: Sentry,
+      level: "warn",
+    })
+  ]
 })
 
 const logMiddleware = (req: Request, res: Response, next: NextFunction) => {
-  const start = Date.now();
+  const start = process.hrtime();
 
   res.on('finish', () => {
-    const duration = Date.now() - start;
-    logger.info({
+    const diff = process.hrtime(start);
+    const duration = (diff[0] * 1e3 + diff[1] * 1e-6).toFixed(3);
+    const payload = {
       method: req.method,
       url: req.originalUrl,
       ip: req.ip,
       userAgent: req.get('User-Agent'),
       statusCode: res.statusCode,
       duration: `${duration}ms`
-    });
+    }
+    if (payload.statusCode >= 500) {
+      logger.error(`HTTP 500: ${payload.method} ${payload.url}`, { extra: payload });
+    } else if (payload.statusCode >= 400) {
+      logger.warn(`HTTP ${payload.statusCode}: ${payload.method} ${payload.url}`, { extra: payload });
+    } else {
+      logger.info(`HTTP ${payload.statusCode}: ${payload.method} ${payload.url}`, { extra: payload });
+    }
+    
   });
 
   next();

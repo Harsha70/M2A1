@@ -1,3 +1,4 @@
+import "./instrument";
 import express, { Request, Response } from 'express';
 import { nanoid } from 'nanoid';
 import prisma from './db';
@@ -7,15 +8,19 @@ import { authenticate } from './middleware/authentication';
 import { tierCheck } from './middleware/tierCheck';
 import { responseTimeNative } from './middleware/resTimelogging';
 import { blacklistMiddleware } from './middleware/blacklistMiddleware';
+import { timeMiddleware } from './middleware/timeMiddlewares';
 
-const app = express();
+export const app = express();
 
 app.use(express.json());
 
-app.use(responseTimeNative);
-app.use(blacklistMiddleware);
-app.use(logMiddleware);
+app.use(timeMiddleware('ResponseTime', responseTimeNative));
+app.use(timeMiddleware('Blacklist', blacklistMiddleware));
+app.use(timeMiddleware('Logger', logMiddleware));
 
+app.get("/debug-sentry", function mainHandler(req, res) {
+  throw new Error("Senvtry Test Error!");
+});
 // old shorten
 /*
 app.post('/shorten', async (req: Request, res: Response): Promise<any> => {
@@ -87,7 +92,7 @@ app.delete('/shorten/:code', async (req: Request, res: Response) => {
 */
 
 
-app.post('/shorten', authenticate, async (req: Request, res: Response): Promise<any> => {
+app.post('/shorten', timeMiddleware('Auth', authenticate), async (req: Request, res: Response): Promise<any> => {
   const { longUrl, expiresAt, customCode, password } = req.body;
   const user = req.user!; 
 
@@ -107,7 +112,7 @@ app.post('/shorten', authenticate, async (req: Request, res: Response): Promise<
   res.status(201).json({ code: newUrl.shortCode });
 });
 
-app.post('/shorten/bulk', authenticate, tierCheck, async (req: Request, res: Response): Promise<any> => {
+app.post('/shorten/bulk', timeMiddleware('Auth', authenticate), timeMiddleware('TierCheck', tierCheck), async (req: Request, res: Response): Promise<any> => {
   const { urls } = req.body;
   const user = req.user!;
 
@@ -150,7 +155,7 @@ app.post('/shorten/bulk', authenticate, tierCheck, async (req: Request, res: Res
   res.status(207).json(results);
 })
 
-app.delete('/shorten/:code', authenticate, async (req: Request, res: Response): Promise<any> => {
+app.delete('/shorten/:code', timeMiddleware('Auth', authenticate), async (req: Request, res: Response): Promise<any> => {
   const { code } = req.params;
   const user = req.user!;
 
@@ -167,7 +172,7 @@ app.delete('/shorten/:code', authenticate, async (req: Request, res: Response): 
   res.status(204).send();
 });
 
-app.patch('/shorten/:code', authenticate, async (req: Request, res: Response): Promise<any> => {
+app.patch('/shorten/:code', timeMiddleware('Auth', authenticate), async (req: Request, res: Response): Promise<any> => {
   const { code } = req.params;
   const { longUrl, expiresAt, password } = req.body;
   const user = req.user!;
@@ -190,7 +195,7 @@ app.patch('/shorten/:code', authenticate, async (req: Request, res: Response): P
   res.status(200).json(updated);
 });
 
-app.get('/urls', authenticate, async (req: Request, res: Response): Promise<any> => {
+app.get('/urls',timeMiddleware('Auth', authenticate), async (req: Request, res: Response): Promise<any> => {
   const user = req.user!;
 
   const urls = await prisma.url.findMany({

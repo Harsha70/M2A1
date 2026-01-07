@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import {logger} from './logger';
 
-console.log('logger----------------',logger);
+// console.log('logger----------------',logger);
 
 export const timeMiddleware = (name: string, middleware:any) => {
     return async (req: Request, res: Response, next: NextFunction) => {
@@ -14,7 +14,6 @@ export const timeMiddleware = (name: string, middleware:any) => {
                 type: 'middleware_perf',
                 middleware: name,
                 duration: `${duration}ms`,
-                requestId: req.headers['x-request-id'] || 'N/A'
             });
             
             next();
