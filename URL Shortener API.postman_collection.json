@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "3eaff6d0-f74d-4b78-9702-be81047017ba",
+		"name": "URL Shortener API",
+		"description": "API documentation for the URL Shortener service including authentication, URL management, and health checks.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34996179",
+		"_collection_link": "https://www.postman.com/supply-astronaut-93702152/urlshortner/collection/34996179-3eaff6d0-f74d-4b78-9702-be81047017ba?action=share&source=collection_link&creator=34996179"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "123",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/health",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"health"
+							]
+						},
+						"description": "Check the health status of the API and database connection."
+					},
+					"response": []
+				},
+				{
+					"name": "Redirect (Use in Browser)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/redirect?code=required_custom_code&password=optional-pass",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"redirect"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "required_custom_code",
+									"description": "The short code to redirect"
+								},
+								{
+									"key": "password",
+									"value": "optional-pass",
+									"description": "Password if the link is protected"
+								}
+							]
+						},
+						"description": "Redirects to the long URL. Note: This usually happens in a browser, but can be tested here to see status codes (302, 404, 410, 401)."
+					},
+					"response": []
+				}
+			],
+			"description": "This is the Get requests for our apis to the public"
+		},
+		{
+			"name": "Auth Required",
+			"item": [
+				{
+					"name": "Create Short URL",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{apiKey}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"longUrl\": \"https://example.com\",\n  \"customCode\": \"required_custom_code\",\n  \"password\": \"optional-pass\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/shorten",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"shorten"
+							]
+						},
+						"description": "Create a new short URL."
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Create Short URLs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{apiKey}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"urls\": [\n    { \"longUrl\": \"https://google.com\" },\n    { \"longUrl\": \"https://bing.com\", \"customCode\": \"my-bing\" }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/shorten/bulk",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"shorten",
+								"bulk"
+							]
+						},
+						"description": "Bulk create short URLs. (Enterprise feature)"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User URLs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{apiKey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/urls",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"urls"
+							]
+						},
+						"description": "Retrieve all URLs created by the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "Update URL",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{apiKey}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"longUrl\": \"https://updated-example.com\",\n  \"password\": \"new-password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/shorten/:code",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"shorten",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "required_custom_code"
+								}
+							]
+						},
+						"description": "Update an existing short URL."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete URL",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{apiKey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/shorten/:code",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"shorten",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "code_to_delete"
+								}
+							]
+						},
+						"description": "Soft delete a short URL."
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3010",
+			"type": "string"
+		},
+		{
+			"key": "apiKey",
+			"value": "YOUR_API_KEY_HERE",
+			"type": "string"
+		}
+	]
+}
