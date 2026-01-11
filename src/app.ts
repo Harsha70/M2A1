@@ -19,7 +19,7 @@ app.use(timeMiddleware('Blacklist', blacklistMiddleware));
 app.use(timeMiddleware('Logger', logMiddleware));
 
 app.get("/debug-sentry", function mainHandler(req, res) {
-  throw new Error("Senvtry Test Error!");
+  throw new Error("Sentry Test Error!");
 });
 // old shorten
 /*
