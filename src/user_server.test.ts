@@ -148,6 +148,24 @@ describe('Ownership and Security', () => {
     expect(res.status).toBe(207);
   });
 
+  it('should allow a user to edit longUrl of a shorten link', async () => {
+    const createRes = await request(app)
+      .post('/shorten')
+      .set('x-api-key', def_KEY)
+      .send({ longUrl: 'https://beforeedit.com' });
+
+    const code = createRes.body.code;
+    console.log('createRes----------------',createRes.body);
+
+    await request(app)
+      .patch(`/shorten/${code}`)
+      .set('x-api-key', def_KEY)
+      .send({ longUrl: 'https://afteredit.com' });
+
+    const checkActive = await request(app).get(`/redirect?code=${code}`);
+    expect(checkActive.status).toBe(302);
+  });
+
   it('should allow a user to reactivate an expired link', async () => {
     const pastDate = new Date(Date.now() - 10000).toISOString();
     const createRes = await request(app)

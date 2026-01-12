@@ -1,0 +1,156 @@
+{"level":"info","message":{"duration":"0.075ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.115Z"}
+{"level":"info","message":{"duration":"0.059ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.117Z"}
+{"level":"info","message":{"duration":"0.206ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.118Z"}
+{"level":"info","message":{"duration":"88.732ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.207Z"}
+{"extra":{"duration":"114.552ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:51.232Z"}
+{"level":"info","message":{"duration":"0.031ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.381Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.382Z"}
+{"level":"info","message":{"duration":"0.021ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.383Z"}
+{"extra":{"duration":"13.105ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":302,"url":"/redirect?code=egKuwW"},"level":"info","message":"HTTP 302: GET /redirect?code=egKuwW","timestamp":"2026-01-09T17:39:51.396Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.415Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.415Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.415Z"}
+{"level":"info","message":{"duration":"2.357ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.418Z"}
+{"extra":{"duration":"13.787ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:51.429Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.443Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.444Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.444Z"}
+{"extra":{"duration":"7.153ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":410,"url":"/redirect?code=66WolR"},"level":"warn","message":"HTTP 410: GET /redirect?code=66WolR","timestamp":"2026-01-09T17:39:51.451Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.464Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.465Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.465Z"}
+{"level":"info","message":{"duration":"3.202ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.469Z"}
+{"extra":{"duration":"14.256ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:51.479Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.495Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.495Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.496Z"}
+{"level":"info","message":{"duration":"1.989ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.498Z"}
+{"extra":{"duration":"6.842ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":409,"url":"/shorten"},"level":"warn","message":"HTTP 409: POST /shorten","timestamp":"2026-01-09T17:39:51.503Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.529Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.530Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.530Z"}
+{"level":"info","message":{"duration":"1.861ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.532Z"}
+{"extra":{"duration":"7.091ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":409,"url":"/shorten"},"level":"warn","message":"HTTP 409: POST /shorten","timestamp":"2026-01-09T17:39:51.537Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.553Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.553Z"}
+{"level":"info","message":{"duration":"0.025ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.554Z"}
+{"level":"info","message":{"duration":"1.994ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.556Z"}
+{"level":"info","message":{"duration":"0.278ms","middleware":"TierCheck","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.557Z"}
+{"extra":{"duration":"18.136ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":207,"url":"/shorten/bulk"},"level":"info","message":"HTTP 207: POST /shorten/bulk","timestamp":"2026-01-09T17:39:51.572Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.603Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.604Z"}
+{"level":"info","message":{"duration":"0.035ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.604Z"}
+{"level":"info","message":{"duration":"2.357ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.607Z"}
+{"extra":{"duration":"18.386ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:51.623Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.651Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.651Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.651Z"}
+{"level":"info","message":{"duration":"1.915ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.654Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"TierCheck","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.654Z"}
+{"extra":{"duration":"114.608ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":207,"url":"/shorten/bulk"},"level":"info","message":"HTTP 207: POST /shorten/bulk","timestamp":"2026-01-09T17:39:51.766Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.813Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.813Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.813Z"}
+{"level":"info","message":{"duration":"2.004ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.816Z"}
+{"extra":{"duration":"7.753ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":403,"url":"/shorten/bulk"},"level":"warn","message":"HTTP 403: POST /shorten/bulk","timestamp":"2026-01-09T17:39:51.821Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.842Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.842Z"}
+{"level":"info","message":{"duration":"0.021ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.843Z"}
+{"level":"info","message":{"duration":"1.749ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.845Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"TierCheck","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.845Z"}
+{"extra":{"duration":"14.031ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":207,"url":"/shorten/bulk"},"level":"info","message":"HTTP 207: POST /shorten/bulk","timestamp":"2026-01-09T17:39:51.857Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.873Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.874Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.874Z"}
+{"level":"info","message":{"duration":"1.910ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.876Z"}
+{"extra":{"duration":"13.020ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:51.887Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.904Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.904Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.904Z"}
+{"level":"info","message":{"duration":"1.657ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.907Z"}
+{"extra":{"duration":"12.066ms","ip":"::ffff:127.0.0.1","method":"PATCH","statusCode":200,"url":"/shorten/dwcilm"},"level":"info","message":"HTTP 200: PATCH /shorten/dwcilm","timestamp":"2026-01-09T17:39:51.916Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.932Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.932Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.933Z"}
+{"extra":{"duration":"8.869ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":302,"url":"/redirect?code=dwcilm"},"level":"info","message":"HTTP 302: GET /redirect?code=dwcilm","timestamp":"2026-01-09T17:39:51.942Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.949Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.950Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.950Z"}
+{"level":"info","message":{"duration":"1.726ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.952Z"}
+{"extra":{"duration":"11.174ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:51.961Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.988Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.989Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:51.989Z"}
+{"extra":{"duration":"5.673ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":410,"url":"/redirect?code=eadrVd"},"level":"warn","message":"HTTP 410: GET /redirect?code=eadrVd","timestamp":"2026-01-09T17:39:51.995Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.007Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.007Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.008Z"}
+{"level":"info","message":{"duration":"1.727ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.010Z"}
+{"extra":{"duration":"11.656ms","ip":"::ffff:127.0.0.1","method":"PATCH","statusCode":200,"url":"/shorten/eadrVd"},"level":"info","message":"HTTP 200: PATCH /shorten/eadrVd","timestamp":"2026-01-09T17:39:52.019Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.035Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.036Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.036Z"}
+{"extra":{"duration":"13.245ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":302,"url":"/redirect?code=eadrVd"},"level":"info","message":"HTTP 302: GET /redirect?code=eadrVd","timestamp":"2026-01-09T17:39:52.049Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.065Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.066Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.066Z"}
+{"level":"info","message":{"duration":"1.951ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.068Z"}
+{"extra":{"duration":"11.946ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:52.078Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.093Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.094Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.094Z"}
+{"level":"info","message":{"duration":"1.548ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.096Z"}
+{"extra":{"duration":"5.121ms","ip":"::ffff:127.0.0.1","method":"PATCH","statusCode":403,"url":"/shorten/IMhrWL"},"level":"warn","message":"HTTP 403: PATCH /shorten/IMhrWL","timestamp":"2026-01-09T17:39:52.099Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.110Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.111Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.111Z"}
+{"level":"info","message":{"duration":"1.628ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.113Z"}
+{"extra":{"duration":"10.793ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:52.122Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.139Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.140Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.140Z"}
+{"extra":{"duration":"3.807ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":401,"url":"/redirect?code=xYf-sL"},"level":"warn","message":"HTTP 401: GET /redirect?code=xYf-sL","timestamp":"2026-01-09T17:39:52.144Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.157Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.158Z"}
+{"level":"info","message":{"duration":"0.022ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.158Z"}
+{"level":"info","message":{"duration":"1.765ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.160Z"}
+{"extra":{"duration":"11.449ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:52.170Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.190Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.192Z"}
+{"level":"info","message":{"duration":"0.062ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.192Z"}
+{"extra":{"duration":"16.048ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":302,"url":"/redirect?code=e6sAMH&password=123"},"level":"info","message":"HTTP 302: GET /redirect?code=e6sAMH&password=123","timestamp":"2026-01-09T17:39:52.208Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.217Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.218Z"}
+{"level":"info","message":{"duration":"0.033ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.218Z"}
+{"level":"info","message":{"duration":"2.170ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.221Z"}
+{"extra":{"duration":"21.638ms","ip":"::ffff:127.0.0.1","method":"POST","statusCode":201,"url":"/shorten"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-09T17:39:52.240Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.265Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.265Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.266Z"}
+{"level":"info","message":{"duration":"2.730ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.269Z"}
+{"extra":{"duration":"20.803ms","ip":"::ffff:127.0.0.1","method":"PATCH","statusCode":200,"url":"/shorten/tRCv7H"},"level":"info","message":"HTTP 200: PATCH /shorten/tRCv7H","timestamp":"2026-01-09T17:39:52.286Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.311Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.312Z"}
+{"level":"info","message":{"duration":"0.026ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.312Z"}
+{"extra":{"duration":"4.084ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":401,"url":"/redirect?code=tRCv7H&password=wrong"},"level":"warn","message":"HTTP 401: GET /redirect?code=tRCv7H&password=wrong","timestamp":"2026-01-09T17:39:52.316Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.330Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.331Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.331Z"}
+{"level":"info","message":{"duration":"2.029ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.333Z"}
+{"extra":{"duration":"14.938ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":200,"url":"/urls"},"level":"info","message":"HTTP 200: GET /urls","timestamp":"2026-01-09T17:39:52.346Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.361Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.361Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.361Z"}
+{"extra":{"duration":"3.789ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":401,"url":"/urls"},"level":"warn","message":"HTTP 401: GET /urls","timestamp":"2026-01-09T17:39:52.365Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.378Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.378Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:39:52.378Z"}
+{"extra":{"duration":"5.142ms","ip":"::ffff:127.0.0.1","method":"GET","statusCode":200,"url":"/health"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-09T17:39:52.383Z"}
+{"level":"info","message":{"duration":"0.169ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T17:48:11.058Z"}
+{"level":"info","message":{"duration":"0.369ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T17:48:11.092Z"}
+{"level":"info","message":{"duration":"0.042ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T17:48:11.105Z"}
+{"extra":{"duration":"37.923ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-09T17:48:11.143Z"}
+{"level":"info","message":{"duration":"0.107ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-09T18:02:08.294Z"}
+{"level":"info","message":{"duration":"0.074ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-09T18:02:08.297Z"}
+{"level":"info","message":{"duration":"0.091ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-09T18:02:08.298Z"}
+{"extra":{"duration":"75.927ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-09T18:02:08.374Z"}
