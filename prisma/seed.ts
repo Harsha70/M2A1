@@ -10,11 +10,12 @@ const prisma = new PrismaClient({adapter});
 async function main() {
   await prisma.user.createMany({
     data: [
-      { email: 'abc@gmail.com', name: 'ABC', apiKey: '123' },
-      { email: 'def@gmail.com', name: 'DEF', apiKey: '234' },
-      { email: 'ghi@gmail.com', name: 'GHI', apiKey: '345' },
-      { email: 'hobby@gmail.com', name: 'Hobby', apiKey: 'hobby_key_123', tier: 'hobby' },
-      { email: 'enterprise@gmail.com', name: 'Enterprise', apiKey: 'enterprise_key_456', tier: 'enterprise' },
+      { email: 'free@gmail.com', name: 'Free', apiKey: 'free_key_123', tier: 'free' },
+      // { email: 'abc@gmail.com', name: 'ABC', apiKey: '123' },
+      // { email: 'def@gmail.com', name: 'DEF', apiKey: '234' },
+      // { email: 'ghi@gmail.com', name: 'GHI', apiKey: '345' },
+      // { email: 'hobby@gmail.com', name: 'Hobby', apiKey: 'hobby_key_123', tier: 'hobby' },
+      // { email: 'enterprise@gmail.com', name: 'Enterprise', apiKey: 'enterprise_key_456', tier: 'enterprise' },
     ]
   });
 }
