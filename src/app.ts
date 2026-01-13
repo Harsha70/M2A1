@@ -63,13 +63,16 @@ app.get('/redirect', async (req: Request, res: Response): Promise<any> => {
   let entry = await redisCache.get(shortCode);
   // console.log('entry----------------',entry, code);
 
-  if (!entry) {
+  if (entry === undefined || entry === null){
     entry = await prisma.url.findUnique({ where: { shortCode } });
-    // if (entry) cacheService.set(shortCode, entry);
-    if (entry) redisCache.set(shortCode, entry);
+    if (entry) {
+      await redisCache.set(shortCode, entry, 3600);
+    } else{
+      await redisCache.set(shortCode, "NOT_FOUND", 60);
+    }
   }
 
-  if (!entry || entry.deletedAt) {
+  if (entry === "NOT_FOUND" || !entry || entry.deletedAt){
     return res.status(404).json({ error: "Link not found" });
   }
 
@@ -92,7 +95,7 @@ app.get('/redirect', async (req: Request, res: Response): Promise<any> => {
   // res.setHeader('Cache-Control', 'public, max-age=3600');
   res.setHeader('Cache-Control', 'no-cache')
 
-  res.redirect(entry.longUrl);
+  return res.redirect(entry.longUrl);
 });
 
 // old delete
@@ -208,6 +211,7 @@ app.patch('/shorten/:code', timeMiddleware('Auth', authenticate), async (req: Re
     }
   });
   console.log('updated----------------',updated);
+  await redisCache.set(updated.shortCode, updated, 3600);
   res.status(200).json(updated);
 });
 

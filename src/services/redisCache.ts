@@ -22,9 +22,9 @@ export const redisCache = {
     return data ? JSON.parse(data) : null;
   },
   
-  set: async (code: string, entry: any) => {
+  set: async (code: string, entry: any, ttl?: number) => {
     await client.set(`url:${code}`, JSON.stringify(entry), {
-      EX: 86400 
+      EX: ttl || 86400 
     });
   },
 
@@ -32,3 +32,4 @@ export const redisCache = {
     await client.del(`url:${code}`);
   }
 };
+// http://localhost:3010/redirect?code=my-custom-link
