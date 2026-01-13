@@ -9,6 +9,8 @@ import { tierCheck } from './middleware/tierCheck';
 import { responseTimeNative } from './middleware/resTimelogging';
 import { blacklistMiddleware } from './middleware/blacklistMiddleware';
 import { timeMiddleware } from './middleware/timeMiddlewares';
+// import { cacheService } from "./services/cache";
+import { redisCache } from "./services/redisCache";
 
 export const app = express();
 
@@ -54,7 +56,18 @@ app.post('/shorten', async (req: Request, res: Response): Promise<any> => {
 
 app.get('/redirect', async (req: Request, res: Response): Promise<any> => {
   const { code, password } = req.query;
-  const entry = await prisma.url.findUnique({ where: { shortCode: String(code) } });
+
+  const shortCode = String(code);
+
+  // let entry: any = cacheService.get(shortCode);
+  let entry = await redisCache.get(shortCode);
+  // console.log('entry----------------',entry, code);
+
+  if (!entry) {
+    entry = await prisma.url.findUnique({ where: { shortCode } });
+    // if (entry) cacheService.set(shortCode, entry);
+    if (entry) redisCache.set(shortCode, entry);
+  }
 
   if (!entry || entry.deletedAt) {
     return res.status(404).json({ error: "Link not found" });
@@ -74,7 +87,10 @@ app.get('/redirect', async (req: Request, res: Response): Promise<any> => {
   await prisma.url.update({
     where: { id: entry.id },
     data: { clicks: { increment: 1 }, lastAccessedAt: new Date() }
-  });
+  }).catch(err => console.error("Analytics update failed", err));
+
+  // res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.setHeader('Cache-Control', 'no-cache')
 
   res.redirect(entry.longUrl);
 });
@@ -235,5 +251,66 @@ app.get('/health', async (req, res)=>{
   }
   res.status(200).json(healthStatus);
 });
+
+app.get('/benchmark', async (req, res)=>{
+  const testCode = 'perf_test_code';
+  const iterations = 100;
+  await prisma.url.upsert({
+    where: { shortCode: testCode },
+    update: {},
+    create: { shortCode: testCode, longUrl: "https://performance-test.com", ownerId: 11 }
+  });
+
+  // cacheService.clear();
+  redisCache.delete(testCode);
+  const startNoCache = performance.now();
+  for(let i=0; i<iterations; i++){
+    await prisma.url.findUnique({ where: { shortCode: testCode } });
+  }
+  const endNoCache = performance.now();
+  const noCacheDuration = endNoCache - startNoCache;
+
+  // cacheService.clear();
+  redisCache.delete(testCode);
+  let hits = 0
+  let misses = 0
+  const startWithCache = performance.now();
+  for(let i=0; i<iterations; i++){
+    // const cached = cacheService.get(testCode);
+    const cached = await redisCache.get(testCode);
+    if(cached){
+      hits++;
+    }else{
+      misses++;
+      const entry = await prisma.url.findUnique({ where: { shortCode: testCode } });
+      // cacheService.set(testCode, entry);
+      await redisCache.set(testCode, entry);
+    }
+  }
+  const endCache = performance.now();
+  const cacheDuration = endCache - startWithCache;
+  const improveFactor = (noCacheDuration / cacheDuration).toFixed(2);
+
+  res.json({
+    iterations,
+    results:{
+      noCache:{
+        totalTime: `${noCacheDuration} ms`,
+        avgTime: `${noCacheDuration / iterations} ms`,
+      },
+      withCache:{
+        totalTime: `${cacheDuration} ms`,
+        avgTime: `${cacheDuration / iterations} ms`,
+        hitRatio: `${hits / iterations * 100}%`,
+        missRatio: `${misses / iterations * 100}%`,
+        hits,
+        misses,
+      }
+    },
+    verdict: `Cache improved performance by ${improveFactor}x`
+  })
+
+
+})
 
 export default app;

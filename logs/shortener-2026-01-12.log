@@ -1,0 +1,16 @@
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T00:07:23.245Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T00:07:23.246Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T00:07:23.247Z"}
+{"extra":{"duration":"80.380ms","ip":"::1","method":"GET","statusCode":302,"url":"/redirect?code=perf_test_code","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 302: GET /redirect?code=perf_test_code","timestamp":"2026-01-13T00:07:23.327Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T00:07:58.631Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T00:07:58.632Z"}
+{"level":"info","message":{"duration":"0.026ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T00:07:58.633Z"}
+{"extra":{"duration":"51.588ms","ip":"::1","method":"GET","statusCode":302,"url":"/redirect?code=perf_test_code","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 302: GET /redirect?code=perf_test_code","timestamp":"2026-01-13T00:07:58.685Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T00:08:24.401Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T00:08:24.402Z"}
+{"level":"info","message":{"duration":"0.032ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T00:08:24.403Z"}
+{"extra":{"duration":"47.973ms","ip":"::1","method":"GET","statusCode":302,"url":"/redirect?code=perf_test_code","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 302: GET /redirect?code=perf_test_code","timestamp":"2026-01-13T00:08:24.451Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T00:09:32.838Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T00:09:32.838Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T00:09:32.839Z"}
+{"extra":{"duration":"4115.568ms","ip":"::1","method":"GET","statusCode":200,"url":"/benchmark","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /benchmark","timestamp":"2026-01-13T00:09:36.954Z"}
