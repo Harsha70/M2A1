@@ -13,6 +13,7 @@ import { timeMiddleware } from './middleware/timeMiddlewares';
 import { redisCache } from "./services/redisCache";
 import { createRateLimiter } from "./middleware/rateLimit";
 import { tierRateLimiter } from "./middleware/tierRateLimiter";
+import { slidingWindowLimiter } from "./middleware/rateLimitSliding";
 
 export const app = express();
 
@@ -22,7 +23,7 @@ app.use(timeMiddleware('ResponseTime', responseTimeNative));
 app.use(timeMiddleware('Blacklist', blacklistMiddleware));
 app.use(timeMiddleware('Logger', logMiddleware));
 
-app.get('/health', async (req, res)=>{
+app.get('/health', slidingWindowLimiter,async (req, res)=>{
   const healthStatus = {
     uptime: process.uptime(),
     memoryUsage: process.memoryUsage(),

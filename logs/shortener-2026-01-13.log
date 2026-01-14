@@ -613,3 +613,470 @@
 {"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:19:05.422Z"}
 {"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:19:05.423Z"}
 {"extra":{"duration":"2.173ms","ip":"::1","method":"POST","statusCode":401,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"warn","message":"HTTP 401: POST /shorten","timestamp":"2026-01-13T22:19:05.425Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:10.895Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:10.896Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:10.896Z"}
+{"level":"info","message":{"duration":"1.488ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:10.898Z"}
+{"extra":{"duration":"104.881ms","ip":"::1","method":"POST","statusCode":201,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-13T22:27:11.001Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:34.720Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:34.721Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:34.722Z"}
+{"level":"info","message":{"duration":"1.459ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:34.724Z"}
+{"extra":{"duration":"64.557ms","ip":"::1","method":"POST","statusCode":201,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-13T22:27:34.787Z"}
+{"level":"info","message":{"duration":"0.021ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:35.855Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:35.856Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:35.856Z"}
+{"level":"info","message":{"duration":"1.442ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:35.858Z"}
+{"extra":{"duration":"65.328ms","ip":"::1","method":"POST","statusCode":201,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-13T22:27:35.921Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:36.850Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:36.851Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:36.852Z"}
+{"level":"info","message":{"duration":"2.424ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:36.855Z"}
+{"extra":{"duration":"65.214ms","ip":"::1","method":"POST","statusCode":201,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-13T22:27:36.917Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:37.844Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:37.845Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:37.845Z"}
+{"level":"info","message":{"duration":"1.418ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:37.847Z"}
+{"extra":{"duration":"61.875ms","ip":"::1","method":"POST","statusCode":201,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-13T22:27:37.907Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:39.376Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:39.377Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:39.377Z"}
+{"level":"info","message":{"duration":"1.668ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:27:39.379Z"}
+{"extra":{"duration":"42.951ms","ip":"::1","method":"POST","statusCode":429,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"warn","message":"HTTP 429: POST /shorten","timestamp":"2026-01-13T22:27:39.420Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-13T22:51:57.719Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-13T22:51:57.720Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-13T22:51:57.720Z"}
+{"level":"info","message":{"duration":"2.379ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-13T22:51:57.723Z"}
+{"extra":{"duration":"103.385ms","ip":"::1","method":"POST","statusCode":201,"url":"/shorten","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 201: POST /shorten","timestamp":"2026-01-13T22:51:57.823Z"}
+{"level":"info","message":{"duration":"0.115ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:09:59.885Z"}
+{"level":"info","message":{"duration":"0.082ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:09:59.889Z"}
+{"level":"info","message":{"duration":"0.136ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:09:59.890Z"}
+{"extra":{"duration":"250.143ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:10:00.141Z"}
+{"level":"info","message":{"duration":"0.032ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:10:21.914Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:10:21.915Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:10:21.916Z"}
+{"extra":{"duration":"161.323ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:10:22.078Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:05.043Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:05.044Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:05.044Z"}
+{"extra":{"duration":"162.671ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:05.207Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:08.178Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:08.179Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:08.179Z"}
+{"extra":{"duration":"161.612ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:08.341Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:09.579Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:09.580Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:09.580Z"}
+{"extra":{"duration":"159.539ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:09.740Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:10.844Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:10.845Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:10.845Z"}
+{"extra":{"duration":"159.922ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:11.005Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:12.059Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:12.060Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:12.060Z"}
+{"extra":{"duration":"159.239ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:12.220Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:13.619Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:13.620Z"}
+{"level":"info","message":{"duration":"0.029ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:13.622Z"}
+{"extra":{"duration":"158.823ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:13.781Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:38.127Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:38.128Z"}
+{"level":"info","message":{"duration":"0.024ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:38.128Z"}
+{"extra":{"duration":"160.606ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:38.289Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:40.064Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:40.064Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:40.065Z"}
+{"extra":{"duration":"158.927ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:40.224Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:42.560Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:42.561Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:11:42.561Z"}
+{"extra":{"duration":"159.957ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:11:42.721Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:12:03.593Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:12:03.594Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:12:03.594Z"}
+{"extra":{"duration":"158.886ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:12:03.753Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:12:05.183Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:12:05.184Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:12:05.184Z"}
+{"extra":{"duration":"160.102ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:12:05.344Z"}
+{"level":"info","message":{"duration":"0.079ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:48.843Z"}
+{"level":"info","message":{"duration":"0.095ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:48.847Z"}
+{"level":"info","message":{"duration":"0.293ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:48.849Z"}
+{"extra":{"duration":"87.813ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:18:48.937Z"}
+{"level":"info","message":{"duration":"0.037ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:53.837Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:53.837Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:53.838Z"}
+{"extra":{"duration":"243.944ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:18:54.082Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:54.235Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:54.237Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:54.238Z"}
+{"extra":{"duration":"43.513ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:18:54.281Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:57.186Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:57.186Z"}
+{"level":"info","message":{"duration":"0.045ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:57.187Z"}
+{"extra":{"duration":"155.956ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:18:57.343Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:57.394Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:57.395Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:57.395Z"}
+{"extra":{"duration":"43.010ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:18:57.438Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:59.443Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:59.444Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:59.444Z"}
+{"extra":{"duration":"154.118ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:18:59.598Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:59.649Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:59.649Z"}
+{"level":"info","message":{"duration":"0.023ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:18:59.650Z"}
+{"extra":{"duration":"43.773ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:18:59.694Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:00.693Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:00.694Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:00.694Z"}
+{"extra":{"duration":"153.846ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:19:00.848Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:00.911Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:00.912Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:00.913Z"}
+{"extra":{"duration":"41.984ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:19:00.955Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:02.385Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:02.385Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:02.386Z"}
+{"extra":{"duration":"152.828ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:19:02.539Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:02.595Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:02.596Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:02.596Z"}
+{"extra":{"duration":"40.319ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:19:02.636Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:08.036Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:08.037Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:08.038Z"}
+{"extra":{"duration":"76.917ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:19:08.115Z"}
+{"level":"info","message":{"duration":"0.028ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:08.258Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:08.259Z"}
+{"level":"info","message":{"duration":"0.023ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:19:08.260Z"}
+{"extra":{"duration":"41.634ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:19:08.302Z"}
+{"level":"info","message":{"duration":"0.027ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:08.571Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:08.572Z"}
+{"level":"info","message":{"duration":"0.027ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:08.572Z"}
+{"extra":{"duration":"155.719ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:20:08.728Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:08.927Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:08.927Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:08.929Z"}
+{"extra":{"duration":"80.153ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:09.009Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:13.930Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:13.930Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:13.931Z"}
+{"extra":{"duration":"155.084ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:20:14.086Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:14.145Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:14.145Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:14.146Z"}
+{"extra":{"duration":"45.910ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:14.192Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:17.076Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:17.076Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:17.077Z"}
+{"extra":{"duration":"152.619ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:20:17.229Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:17.278Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:17.278Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:17.279Z"}
+{"extra":{"duration":"42.070ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:17.321Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:19.118Z"}
+{"level":"info","message":{"duration":"0.096ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:19.119Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:19.119Z"}
+{"extra":{"duration":"154.516ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:20:19.274Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:19.323Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:19.324Z"}
+{"level":"info","message":{"duration":"0.024ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:19.326Z"}
+{"extra":{"duration":"40.827ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:19.367Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:23.638Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:23.639Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:23.639Z"}
+{"extra":{"duration":"152.782ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:20:23.792Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:23.846Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:23.847Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:23.847Z"}
+{"extra":{"duration":"42.345ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:23.889Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:25.263Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:25.264Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:25.264Z"}
+{"extra":{"duration":"76.723ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:20:25.341Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:25.497Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:25.498Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:25.498Z"}
+{"extra":{"duration":"41.822ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:25.540Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:44.558Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:44.559Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:44.559Z"}
+{"extra":{"duration":"76.482ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:20:44.636Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:44.775Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:44.775Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:44.776Z"}
+{"extra":{"duration":"40.519ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:44.816Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:47.463Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:47.463Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:47.464Z"}
+{"extra":{"duration":"77.657ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:20:47.541Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:47.669Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:47.670Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:47.670Z"}
+{"extra":{"duration":"40.570ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:47.711Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:49.579Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:49.580Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:49.580Z"}
+{"extra":{"duration":"76.662ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:20:49.657Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:49.791Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:49.792Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:49.792Z"}
+{"extra":{"duration":"41.983ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:49.834Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:51.137Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:51.138Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:51.139Z"}
+{"extra":{"duration":"76.075ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:20:51.215Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:51.347Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:51.351Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:20:51.352Z"}
+{"extra":{"duration":"40.723ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:20:51.393Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:07.871Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:07.872Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:07.872Z"}
+{"extra":{"duration":"76.272ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:21:07.948Z"}
+{"level":"info","message":{"duration":"0.021ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:08.091Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:08.092Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:08.093Z"}
+{"extra":{"duration":"40.988ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:21:08.134Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:29.039Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:29.039Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:29.040Z"}
+{"extra":{"duration":"153.363ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:21:29.193Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:29.252Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:29.253Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:29.254Z"}
+{"extra":{"duration":"82.580ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:21:29.336Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:30.453Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:30.453Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:30.454Z"}
+{"extra":{"duration":"151.515ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:21:30.605Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:30.671Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:30.672Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:30.672Z"}
+{"extra":{"duration":"40.364ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:21:30.713Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:32.041Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:32.042Z"}
+{"level":"info","message":{"duration":"0.024ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:32.044Z"}
+{"extra":{"duration":"152.609ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:21:32.196Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:32.247Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:32.247Z"}
+{"level":"info","message":{"duration":"0.028ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:32.250Z"}
+{"extra":{"duration":"41.764ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:21:32.292Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:33.679Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:33.680Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:33.681Z"}
+{"extra":{"duration":"153.533ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:21:33.834Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:33.890Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:33.891Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:33.891Z"}
+{"extra":{"duration":"40.132ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:21:33.932Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:35.279Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:35.279Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:35.280Z"}
+{"extra":{"duration":"152.644ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:21:35.433Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:35.487Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:35.488Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:21:35.489Z"}
+{"extra":{"duration":"40.725ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:21:35.529Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:05.204Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:05.205Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:05.205Z"}
+{"extra":{"duration":"76.720ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:22:05.282Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:05.406Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:05.407Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:05.407Z"}
+{"extra":{"duration":"40.820ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:05.448Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:13.433Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:13.433Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:13.434Z"}
+{"extra":{"duration":"77.150ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:22:13.511Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:13.642Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:13.643Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:13.643Z"}
+{"extra":{"duration":"43.640ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:13.687Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:35.948Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:35.950Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:35.951Z"}
+{"extra":{"duration":"152.039ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:22:36.103Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:36.164Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:36.165Z"}
+{"level":"info","message":{"duration":"0.028ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:36.168Z"}
+{"extra":{"duration":"87.693ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:36.255Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:43.895Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:43.895Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:43.896Z"}
+{"extra":{"duration":"156.679ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:22:44.053Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:44.100Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:44.101Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:44.101Z"}
+{"extra":{"duration":"40.198ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:44.141Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:47.889Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:47.889Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:47.890Z"}
+{"extra":{"duration":"153.720ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:22:48.043Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:48.103Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:48.104Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:48.104Z"}
+{"extra":{"duration":"55.281ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:48.160Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:50.969Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:50.969Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:50.969Z"}
+{"extra":{"duration":"151.432ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:22:51.121Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:51.158Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:51.159Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:51.160Z"}
+{"extra":{"duration":"43.094ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:51.203Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:54.598Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:54.599Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:54.600Z"}
+{"extra":{"duration":"152.460ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:22:54.752Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:54.814Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:54.815Z"}
+{"level":"info","message":{"duration":"0.026ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:22:54.816Z"}
+{"extra":{"duration":"40.685ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:22:54.857Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:01.978Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:01.979Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:01.979Z"}
+{"extra":{"duration":"77.146ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:23:02.057Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:02.187Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:02.188Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:02.189Z"}
+{"extra":{"duration":"40.916ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:23:02.230Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:19.184Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:19.185Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:19.185Z"}
+{"extra":{"duration":"76.156ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:23:19.261Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:19.394Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:19.394Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:19.395Z"}
+{"extra":{"duration":"41.770ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:23:19.437Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:31.385Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:31.386Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:31.386Z"}
+{"extra":{"duration":"76.842ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:23:31.463Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:31.606Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:31.607Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:31.607Z"}
+{"extra":{"duration":"40.090ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:23:31.647Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:33.894Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:33.895Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:33.895Z"}
+{"extra":{"duration":"76.121ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:23:33.971Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:34.109Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:34.110Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:34.110Z"}
+{"extra":{"duration":"52.510ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:23:34.163Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:49.933Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:49.933Z"}
+{"level":"info","message":{"duration":"0.009ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:49.934Z"}
+{"extra":{"duration":"151.783ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:23:50.086Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:50.152Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:50.154Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:23:50.154Z"}
+{"extra":{"duration":"83.154ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:23:50.237Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:03.004Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:03.005Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:03.005Z"}
+{"extra":{"duration":"153.298ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:24:03.158Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:03.230Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:03.231Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:03.231Z"}
+{"extra":{"duration":"40.164ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:24:03.272Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:04.995Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:04.996Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:04.996Z"}
+{"extra":{"duration":"152.379ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:24:05.149Z"}
+{"level":"info","message":{"duration":"0.022ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:05.209Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:05.210Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:05.211Z"}
+{"extra":{"duration":"44.353ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:24:05.256Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:06.500Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:06.501Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:06.502Z"}
+{"extra":{"duration":"152.325ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:24:06.654Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:06.724Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:06.725Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:06.725Z"}
+{"extra":{"duration":"48.201ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:24:06.773Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:08.082Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:08.083Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:08.083Z"}
+{"extra":{"duration":"151.395ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:24:08.235Z"}
+{"level":"info","message":{"duration":"0.027ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:08.294Z"}
+{"level":"info","message":{"duration":"0.023ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:08.295Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:08.295Z"}
+{"extra":{"duration":"40.377ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:24:08.336Z"}
+{"level":"info","message":{"duration":"0.026ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:09.793Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:09.793Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:09.794Z"}
+{"extra":{"duration":"76.423ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:24:09.870Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:10.003Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:10.003Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:24:10.004Z"}
+{"extra":{"duration":"40.113ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:24:10.044Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:20.793Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:20.793Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:20.794Z"}
+{"extra":{"duration":"152.813ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:25:20.947Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:21.311Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:21.312Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:21.312Z"}
+{"extra":{"duration":"79.318ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:25:21.392Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:52.392Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:52.392Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:52.393Z"}
+{"extra":{"duration":"152.696ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:25:52.545Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:52.743Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:52.744Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:25:52.744Z"}
+{"extra":{"duration":"41.569ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:25:52.786Z"}
+{"level":"info","message":{"duration":"0.016ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:11.983Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:11.984Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:11.985Z"}
+{"extra":{"duration":"152.595ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:26:12.137Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:12.229Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:12.230Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:12.230Z"}
+{"extra":{"duration":"41.857ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:26:12.272Z"}
+{"level":"info","message":{"duration":"0.022ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:44.979Z"}
+{"level":"info","message":{"duration":"0.007ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:44.982Z"}
+{"level":"info","message":{"duration":"0.024ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:44.988Z"}
+{"extra":{"duration":"155.229ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:26:45.143Z"}
+{"level":"info","message":{"duration":"0.017ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:45.400Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:45.400Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:26:45.401Z"}
+{"extra":{"duration":"78.849ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:26:45.480Z"}
+{"level":"info","message":{"duration":"0.024ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:02.073Z"}
+{"level":"info","message":{"duration":"0.012ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:02.084Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:02.085Z"}
+{"extra":{"duration":"152.534ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:27:02.237Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:02.290Z"}
+{"level":"info","message":{"duration":"0.004ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:02.290Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:02.291Z"}
+{"extra":{"duration":"50.230ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:27:02.341Z"}
+{"level":"info","message":{"duration":"0.018ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:03.973Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:03.974Z"}
+{"level":"info","message":{"duration":"0.015ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:03.974Z"}
+{"extra":{"duration":"152.331ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:27:04.126Z"}
+{"level":"info","message":{"duration":"0.013ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:04.192Z"}
+{"level":"info","message":{"duration":"0.002ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:04.192Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:04.193Z"}
+{"extra":{"duration":"70.977ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:27:04.264Z"}
+{"level":"info","message":{"duration":"0.014ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:06.161Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:06.161Z"}
+{"level":"info","message":{"duration":"0.008ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:06.162Z"}
+{"extra":{"duration":"152.475ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-14T00:27:06.314Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:06.390Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:06.391Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:06.391Z"}
+{"extra":{"duration":"43.023ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:27:06.434Z"}
+{"level":"info","message":{"duration":"0.022ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:07.749Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:07.750Z"}
+{"level":"info","message":{"duration":"0.011ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:07.751Z"}
+{"extra":{"duration":"76.307ms","ip":"::1","method":"GET","statusCode":429,"url":"/health","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 429: GET /health","timestamp":"2026-01-14T00:27:07.827Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:07.971Z"}
+{"level":"info","message":{"duration":"0.006ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:07.972Z"}
+{"level":"info","message":{"duration":"0.022ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-14T00:27:07.974Z"}
+{"extra":{"duration":"64.584ms","ip":"::1","method":"GET","statusCode":404,"url":"/.well-known/appspecific/com.chrome.devtools.json","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /.well-known/appspecific/com.chrome.devtools.json","timestamp":"2026-01-14T00:27:08.038Z"}
