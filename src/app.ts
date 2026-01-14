@@ -9,6 +9,12 @@ import { tierCheck } from './middleware/tierCheck';
 import { responseTimeNative } from './middleware/resTimelogging';
 import { blacklistMiddleware } from './middleware/blacklistMiddleware';
 import { timeMiddleware } from './middleware/timeMiddlewares';
+// import { cacheService } from "./services/cache";
+import { redisCache } from "./services/redisCache";
+import { createRateLimiter } from "./middleware/rateLimit";
+import { tierRateLimiter } from "./middleware/tierRateLimiter";
+import { slidingWindowLimiter } from "./middleware/rateLimitSliding";
+import {tokenBucketLimiter} from "./middleware/rateLimitTokenBucket";
 
 export const app = express();
 
@@ -17,6 +23,93 @@ app.use(express.json());
 app.use(timeMiddleware('ResponseTime', responseTimeNative));
 app.use(timeMiddleware('Blacklist', blacklistMiddleware));
 app.use(timeMiddleware('Logger', logMiddleware));
+
+// app.use(tokenBucketLimiter);
+
+app.get('/health', 
+  // slidingWindowLimiter,
+  tokenBucketLimiter,
+  async (req, res)=>{
+  const healthStatus = {
+    uptime: process.uptime(),
+    memoryUsage: process.memoryUsage(),
+    environment: process.env.NODE_ENV,
+    timestamp: new Date().toISOString(),
+    message: "OK",
+    checks: {
+     server: "UP",
+     database: "DOWN" 
+    }
+  };
+  try {
+    await prisma.$queryRaw`SELECT 1`;
+    healthStatus.checks.database = "UP";
+  } catch (error) {
+    healthStatus.message = "ERROR";
+    healthStatus.checks.database = "DOWN";
+    res.status(503).json(healthStatus);
+  }
+  res.status(200).json(healthStatus);
+});
+
+app.get('/benchmark', async (req, res)=>{
+  const testCode = 'perf_test_code';
+  const iterations = 100;
+  await prisma.url.upsert({
+    where: { shortCode: testCode },
+    update: {},
+    create: { shortCode: testCode, longUrl: "https://performance-test.com", ownerId: 11 }
+  });
+
+  // cacheService.clear();
+  redisCache.delete(testCode);
+  const startNoCache = performance.now();
+  for(let i=0; i<iterations; i++){
+    await prisma.url.findUnique({ where: { shortCode: testCode } });
+  }
+  const endNoCache = performance.now();
+  const noCacheDuration = endNoCache - startNoCache;
+
+  // cacheService.clear();
+  redisCache.delete(testCode);
+  let hits = 0
+  let misses = 0
+  const startWithCache = performance.now();
+  for(let i=0; i<iterations; i++){
+    // const cached = cacheService.get(testCode);
+    const cached = await redisCache.get(testCode);
+    if(cached){
+      hits++;
+    }else{
+      misses++;
+      const entry = await prisma.url.findUnique({ where: { shortCode: testCode } });
+      // cacheService.set(testCode, entry);
+      await redisCache.set(testCode, entry);
+    }
+  }
+  const endCache = performance.now();
+  const cacheDuration = endCache - startWithCache;
+  const improveFactor = (noCacheDuration / cacheDuration).toFixed(2);
+
+  res.json({
+    iterations,
+    results:{
+      noCache:{
+        totalTime: `${noCacheDuration} ms`,
+        avgTime: `${noCacheDuration / iterations} ms`,
+      },
+      withCache:{
+        totalTime: `${cacheDuration} ms`,
+        avgTime: `${cacheDuration / iterations} ms`,
+        hitRatio: `${hits / iterations * 100}%`,
+        missRatio: `${misses / iterations * 100}%`,
+        hits,
+        misses,
+      }
+    },
+    verdict: `Cache improved performance by ${improveFactor}x`
+  })
+})
 
 app.get("/debug-sentry", function mainHandler(req, res) {
   throw new Error("Sentry Test Error!");
@@ -52,11 +145,25 @@ app.post('/shorten', async (req: Request, res: Response): Promise<any> => {
 // });
 
 
-app.get('/redirect', async (req: Request, res: Response): Promise<any> => {
+app.get('/redirect', createRateLimiter(50, 120),async (req: Request, res: Response): Promise<any> => {
   const { code, password } = req.query;
-  const entry = await prisma.url.findUnique({ where: { shortCode: String(code) } });
 
-  if (!entry || entry.deletedAt) {
+  const shortCode = String(code);
+
+  // let entry: any = cacheService.get(shortCode);
+  let entry = await redisCache.get(shortCode);
+  // console.log('entry----------------',entry, code);
+
+  if (entry === undefined || entry === null){
+    entry = await prisma.url.findUnique({ where: { shortCode } });
+    if (entry) {
+      await redisCache.set(shortCode, entry, 3600);
+    } else{
+      await redisCache.set(shortCode, "NOT_FOUND", 60);
+    }
+  }
+
+  if (entry === "NOT_FOUND" || !entry || entry.deletedAt){
     return res.status(404).json({ error: "Link not found" });
   }
 
@@ -74,7 +181,10 @@ app.get('/redirect', async (req: Request, res: Response): Promise<any> => {
   await prisma.url.update({
     where: { id: entry.id },
     data: { clicks: { increment: 1 }, lastAccessedAt: new Date() }
-  });
+  }).catch(err => console.error("Analytics update failed", err));
+
+  // res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.setHeader('Cache-Control', 'no-cache')
 
   res.redirect(entry.longUrl);
 });
@@ -91,8 +201,11 @@ app.delete('/shorten/:code', async (req: Request, res: Response) => {
 });
 */
 
-
-app.post('/shorten', timeMiddleware('Auth', authenticate), async (req: Request, res: Response): Promise<any> => {
+app.post('/shorten', 
+  // createRateLimiter(10, 60), 
+  timeMiddleware('Auth', authenticate), 
+  tierRateLimiter,
+  async (req: Request, res: Response): Promise<any> => {
   const { longUrl, expiresAt, customCode, password } = req.body;
   const user = req.user!; 
 
@@ -111,6 +224,8 @@ app.post('/shorten', timeMiddleware('Auth', authenticate), async (req: Request, 
   });
   res.status(201).json({ code: newUrl.shortCode });
 });
+
+app.use(createRateLimiter(100, 60));
 
 app.post('/shorten/bulk', timeMiddleware('Auth', authenticate), timeMiddleware('TierCheck', tierCheck), async (req: Request, res: Response): Promise<any> => {
   const { urls } = req.body;
@@ -192,6 +307,7 @@ app.patch('/shorten/:code', timeMiddleware('Auth', authenticate), async (req: Re
     }
   });
   console.log('updated----------------',updated);
+  await redisCache.set(updated.shortCode, updated, 3600);
   res.status(200).json(updated);
 });
 
@@ -213,27 +329,5 @@ app.get('/urls',timeMiddleware('Auth', authenticate), async (req: Request, res: 
   });
 });
 
-app.get('/health', async (req, res)=>{
-  const healthStatus = {
-    uptime: process.uptime(),
-    memoryUsage: process.memoryUsage(),
-    environment: process.env.NODE_ENV,
-    timestamp: new Date().toISOString(),
-    message: "OK",
-    checks: {
-     server: "UP",
-     database: "DOWN" 
-    }
-  };
-  try {
-    await prisma.$queryRaw`SELECT 1`;
-    healthStatus.checks.database = "UP";
-  } catch (error) {
-    healthStatus.message = "ERROR";
-    healthStatus.checks.database = "DOWN";
-    res.status(503).json(healthStatus);
-  }
-  res.status(200).json(healthStatus);
-});
 
 export default app;

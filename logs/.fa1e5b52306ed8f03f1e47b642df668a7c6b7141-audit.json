@@ -19,6 +19,16 @@
             "date": 1767980891069,
             "name": "logs\\shortener-2026-01-09.log",
             "hash": "76317e8d0b903381b14410850f8b01d24ffc66c31acf6e603e50efc1a26acf0d"
+        },
+        {
+            "date": 1768239976613,
+            "name": "logs\\shortener-2026-01-12.log",
+            "hash": "daecdeca833d78aba9bd53f7f2040eaa1c66625c1e6e09de9a2d64a655571b4b"
+        },
+        {
+            "date": 1768320154429,
+            "name": "logs\\shortener-2026-01-13.log",
+            "hash": "39bf89758d7d60a27b9741bb0721f350f31fdc3898c0a618f48c345960371ab7"
         }
     ],
     "hashType": "sha256"
