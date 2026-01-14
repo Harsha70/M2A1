@@ -14,6 +14,7 @@ import { redisCache } from "./services/redisCache";
 import { createRateLimiter } from "./middleware/rateLimit";
 import { tierRateLimiter } from "./middleware/tierRateLimiter";
 import { slidingWindowLimiter } from "./middleware/rateLimitSliding";
+import {tokenBucketLimiter} from "./middleware/rateLimitTokenBucket";
 
 export const app = express();
 
@@ -23,7 +24,12 @@ app.use(timeMiddleware('ResponseTime', responseTimeNative));
 app.use(timeMiddleware('Blacklist', blacklistMiddleware));
 app.use(timeMiddleware('Logger', logMiddleware));
 
-app.get('/health', slidingWindowLimiter,async (req, res)=>{
+// app.use(tokenBucketLimiter);
+
+app.get('/health', 
+  // slidingWindowLimiter,
+  tokenBucketLimiter,
+  async (req, res)=>{
   const healthStatus = {
     uptime: process.uptime(),
     memoryUsage: process.memoryUsage(),
