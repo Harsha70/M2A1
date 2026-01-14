@@ -112,7 +112,7 @@ app.get('/benchmark', async (req, res)=>{
 })
 
 app.get("/debug-sentry", function mainHandler(req, res) {
-  throw new Error("Senvtry Test Error!");
+  throw new Error("Sentry Test Error!");
 });
 // old shorten
 /*

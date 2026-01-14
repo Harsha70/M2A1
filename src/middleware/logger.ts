@@ -2,8 +2,6 @@ import winston from 'winston';
 import Transport from 'winston-transport';
 import 'winston-daily-rotate-file';
 import { NextFunction, Request, Response } from 'express';
-import * as Sentry from "@sentry/node";
-// import { SentryTransport } from "@sentry/winston";
 
 const logFormat = winston.format.combine(
     winston.format.timestamp(),
@@ -18,16 +16,9 @@ const transport = new winston.transports.DailyRotateFile({
     maxFiles: '14d'
 });
 
-const SentryWinstonTransport = Sentry.createSentryWinstonTransport(Transport);
-
-
 export const logger = winston.createLogger({
     format: logFormat,
     transports:[transport, new winston.transports.Console()
-    , new SentryWinstonTransport({
-      sentry: Sentry,
-      level: "warn",
-    })
   ]
 })
 
@@ -48,6 +39,7 @@ const logMiddleware = (req: Request, res: Response, next: NextFunction) => {
     if (payload.statusCode >= 500) {
       logger.error(`HTTP 500: ${payload.method} ${payload.url}`, { extra: payload });
     } else if (payload.statusCode >= 400) {
+      console.log(payload);
       logger.warn(`HTTP ${payload.statusCode}: ${payload.method} ${payload.url}`, { extra: payload });
     } else {
       logger.info(`HTTP ${payload.statusCode}: ${payload.method} ${payload.url}`, { extra: payload });
