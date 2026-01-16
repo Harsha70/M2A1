@@ -313,20 +313,40 @@ app.patch('/shorten/:code', timeMiddleware('Auth', authenticate), async (req: Re
 
 app.get('/urls',timeMiddleware('Auth', authenticate), async (req: Request, res: Response): Promise<any> => {
   const user = req.user!;
-
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = parseInt(req.query.limit as string) || 10;
+  const skip = (page - 1) * limit;
+  try{
   const urls = await prisma.url.findMany({
     where: { 
       ownerId: user.id,
       deletedAt: null 
     },
-    orderBy: { createdAt: 'desc' } 
+    orderBy: { createdAt: 'desc' },
+    skip,
+    take: limit 
+  });
+
+  const totalCount = await prisma.url.count({
+    where: { 
+      ownerId: user.id,
+      deletedAt: null 
+    }
   });
 
   res.json({
-    user: user.email,
-    total: urls.length,
-    data: urls
+    data: urls,
+    meta: {
+      totalItems: totalCount,
+      currentPage: page,
+      totalPages: Math.ceil(totalCount / limit),
+      limit
+    }
   });
+} catch (error) {
+  console.error('Error fetching URLs:', error);
+  res.status(500).json({ error: 'Internal server error' });
+}
 });
 
 
