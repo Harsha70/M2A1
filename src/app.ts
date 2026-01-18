@@ -15,6 +15,7 @@ import { createRateLimiter } from "./middleware/rateLimit";
 import { tierRateLimiter } from "./middleware/tierRateLimiter";
 import { slidingWindowLimiter } from "./middleware/rateLimitSliding";
 import {tokenBucketLimiter} from "./middleware/rateLimitTokenBucket";
+import { withExponentialBackoff } from "./utils/retry";
 
 export const app = express();
 
@@ -317,32 +318,35 @@ app.get('/urls',timeMiddleware('Auth', authenticate), async (req: Request, res: 
   const limit = parseInt(req.query.limit as string) || 10;
   const skip = (page - 1) * limit;
   try{
-  const urls = await prisma.url.findMany({
-    where: { 
-      ownerId: user.id,
-      deletedAt: null 
-    },
-    orderBy: { createdAt: 'desc' },
-    skip,
-    take: limit 
-  });
+    const urls = await withExponentialBackoff(() => prisma.url.findMany({
+      where: { 
+        ownerId: user.id,
+        deletedAt: null 
+      },
+      orderBy: { createdAt: 'desc' },
+      skip,
+      take: limit 
+    }), {
+      maxAttempts: 3,
+      baseDelay: 1000
+    });
 
-  const totalCount = await prisma.url.count({
-    where: { 
-      ownerId: user.id,
-      deletedAt: null 
-    }
-  });
+    const totalCount = await prisma.url.count({
+      where: { 
+        ownerId: user.id,
+        deletedAt: null 
+      }
+    });
 
-  res.json({
-    data: urls,
-    meta: {
-      totalItems: totalCount,
-      currentPage: page,
-      totalPages: Math.ceil(totalCount / limit),
-      limit
-    }
-  });
+    res.json({
+      data: urls,
+      meta: {
+        totalItems: totalCount,
+        currentPage: page,
+        totalPages: Math.ceil(totalCount / limit),
+        limit
+      }
+    });
 } catch (error) {
   console.error('Error fetching URLs:', error);
   res.status(500).json({ error: 'Internal server error' });

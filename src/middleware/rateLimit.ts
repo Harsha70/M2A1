@@ -19,7 +19,7 @@ export const createRateLimiter = (limit: number, windowInSeconds: number) =>{
                     message: `You have exceeded the limit of ${limit} requests per minute.`
                 });
             }
-            console.log('Headers before next:',ip, res.getHeaders())
+            // console.log('Headers before next:',ip, res.getHeaders())
             next();
         }catch(err){
             console.error('Rate limit middleware error', err);
