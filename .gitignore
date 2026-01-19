@@ -5,7 +5,7 @@ node_modules
 /generated/prisma
 
 /src/generated/prisma
-cache.test.ts
-server.test.ts
-user_server.test.ts
-logs/
+/src/cache.test.ts
+/src/server.test.ts
+/src/user_server.test.ts
+/logs/
