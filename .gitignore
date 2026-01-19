@@ -9,3 +9,4 @@ node_modules
 /src/server.test.ts
 /src/user_server.test.ts
 /logs/
+/dist
