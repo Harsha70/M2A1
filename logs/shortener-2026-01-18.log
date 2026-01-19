@@ -1,0 +1,8 @@
+{"level":"info","message":{"duration":"0.062ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-19T03:17:18.190Z"}
+{"level":"info","message":{"duration":"0.042ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-19T03:17:18.191Z"}
+{"level":"info","message":{"duration":"0.233ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-19T03:17:18.192Z"}
+{"extra":{"duration":"281.124ms","ip":"::1","method":"GET","statusCode":200,"url":"/health","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"info","message":"HTTP 200: GET /health","timestamp":"2026-01-19T03:17:18.474Z"}
+{"level":"info","message":{"duration":"0.010ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-19T03:17:18.613Z"}
+{"level":"info","message":{"duration":"0.002ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-19T03:17:18.614Z"}
+{"level":"info","message":{"duration":"0.005ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-19T03:17:18.614Z"}
+{"extra":{"duration":"130.137ms","ip":"::1","method":"GET","statusCode":404,"url":"/favicon.ico","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"},"level":"warn","message":"HTTP 404: GET /favicon.ico","timestamp":"2026-01-19T03:17:18.745Z"}
