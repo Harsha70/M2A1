@@ -31,9 +31,29 @@
             "hash": "39bf89758d7d60a27b9741bb0721f350f31fdc3898c0a618f48c345960371ab7"
         },
         {
-            "date": 1768365272994,
-            "name": "logs/shortener-2026-01-13.log",
-            "hash": "05db7c359cb64fe5a845b2e9e9c9f6052af47df178e3981804045e75831fee2c"
+            "date": 1768409578063,
+            "name": "logs\\shortener-2026-01-14.log",
+            "hash": "39e27b73e1a41efff25d4dcb3cbaa278e18402cf74339f41de6c0ccdba62b582"
+        },
+        {
+            "date": 1768504174669,
+            "name": "logs\\shortener-2026-01-15.log",
+            "hash": "9d97cdf1679ee6a35aac0618d69a887c9bd0174c7e07bc221cbfc397d70edf2f"
+        },
+        {
+            "date": 1768704321586,
+            "name": "logs/shortener-2026-01-17.log",
+            "hash": "417973e2b933cf4c3064628ab51fb27003e9a85e571f1f7dc8c152c5bb57e097"
+        },
+        {
+            "date": 1768776812508,
+            "name": "logs/shortener-2026-01-18.log",
+            "hash": "efb0b7433395aaa6b26c4076766baba39cbf43235c15b1cf87e01c6aa360d03b"
+        },
+        {
+            "date": 1768778109917,
+            "name": "logs/shortener-2026-01-18.log.1",
+            "hash": "d6c8686c74678d17a1286a9ed28004eb3f3971249944333b0a07764bfe94cc5a"
         }
     ],
     "hashType": "sha256"

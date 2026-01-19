@@ -1,0 +1,15 @@
+{"level":"info","message":{"duration":"0.988ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-15T19:09:34.655Z"}
+{"level":"info","message":{"duration":"0.085ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-15T19:09:34.704Z"}
+{"level":"info","message":{"duration":"0.136ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-15T19:09:34.705Z"}
+{"level":"info","message":{"duration":"148.418ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-15T19:09:34.942Z"}
+{"extra":{"duration":"285.609ms","ip":"::1","method":"GET","statusCode":200,"url":"/urls","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 200: GET /urls","timestamp":"2026-01-15T19:09:34.991Z"}
+{"level":"info","message":{"duration":"0.069ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-15T19:28:35.528Z"}
+{"level":"info","message":{"duration":"0.051ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-15T19:28:35.530Z"}
+{"level":"info","message":{"duration":"0.072ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-15T19:28:35.531Z"}
+{"level":"info","message":{"duration":"99.690ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-15T19:28:35.715Z"}
+{"extra":{"duration":"201.090ms","ip":"::1","method":"GET","statusCode":200,"url":"/urls","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 200: GET /urls","timestamp":"2026-01-15T19:28:35.732Z"}
+{"level":"info","message":{"duration":"0.020ms","middleware":"ResponseTime","type":"middleware_perf"},"timestamp":"2026-01-15T19:29:52.226Z"}
+{"level":"info","message":{"duration":"0.003ms","middleware":"Blacklist","type":"middleware_perf"},"timestamp":"2026-01-15T19:29:52.227Z"}
+{"level":"info","message":{"duration":"0.019ms","middleware":"Logger","type":"middleware_perf"},"timestamp":"2026-01-15T19:29:52.227Z"}
+{"level":"info","message":{"duration":"1.970ms","middleware":"Auth","type":"middleware_perf"},"timestamp":"2026-01-15T19:29:52.310Z"}
+{"extra":{"duration":"91.739ms","ip":"::1","method":"GET","statusCode":200,"url":"/urls?page=2&limit=20","userAgent":"PostmanRuntime/7.51.0"},"level":"info","message":"HTTP 200: GET /urls?page=2&limit=20","timestamp":"2026-01-15T19:29:52.319Z"}
